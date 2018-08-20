@@ -1,22 +1,17 @@
 # Workshop Mindstorms
 
 ## Einrichten der Umgebung
-- Intellij
+- Eclipse
 - Gitlab
-- Beispiel bauen und Upload
-
+- Beispiel bauen und Upload auf den Roboter
 
 ## Bewegen des Roboters
 - Vor und zurück
 - Drehen
 
-## Lichtsensor benutzen
-- Werte ablesen und auf dem Display anzeigen
-
 ## Roboter folgt einer Linie
-- Multithreading
 - Kurven folgen
-- Sound am Ende abspielen
+- Sound am Ziel abspielen
 
 ## Challenge
 Welcher Roboter ist der schnellste auf einem vorgegebenen Kurs?

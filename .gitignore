@@ -1,0 +1,8 @@
+# Folders
+.idea
+/bin/
+
+# Files
+.classpath
+.project
+lego-mindstorms.iml
