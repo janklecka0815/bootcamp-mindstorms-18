@@ -2,6 +2,7 @@ package org.lejos.learn.helloworld;
 
 import lejos.hardware.lcd.LCD;
 import lejos.hardware.port.SensorPort;
+import lejos.hardware.Button;
 import lejos.hardware.sensor.EV3ColorSensor;
 import lejos.hardware.sensor.SensorMode;
 
@@ -17,8 +18,10 @@ public class ColorExample {
         LCD.setAutoRefresh(false);
         brightnessSensorMode = sensor.getRGBMode();
         float[] sample = new float[brightnessSensorMode.sampleSize()];
+        
+        boolean buttonPressed = false;
 
-        while(true) {
+        while(!buttonPressed) {
             brightnessSensorMode.fetchSample(sample, 0);
             LCD.refresh();
             LCD.clear();
@@ -26,7 +29,10 @@ public class ColorExample {
             LCD.drawString("R: " + sample[0], 1, 1);
             LCD.drawString("G: " + sample[1], 1, 2);
             LCD.drawString("B: " + sample[2], 1, 3);
-
+            
+            if (Button.readButtons() != 0) {
+            	buttonPressed = true;
+            }
         }
 
     }
