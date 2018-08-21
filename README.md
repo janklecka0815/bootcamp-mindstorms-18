@@ -2,7 +2,7 @@
 
 ## Einrichten der Umgebung
 - Eclipse
-- Gitlab
+- Github
 - Beispiel bauen und Upload auf den Roboter
 
 #### Eclipse einrichten
