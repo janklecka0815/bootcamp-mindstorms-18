@@ -5,7 +5,7 @@ import lejos.hardware.lcd.Font;
 import lejos.hardware.lcd.GraphicsLCD;
 import lejos.utility.Delay;
 
-public class EV3HelloWorld
+public class EV3Hello
 {
     public static void main(String[] args)
     {
