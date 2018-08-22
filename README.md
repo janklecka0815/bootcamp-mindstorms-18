@@ -15,23 +15,21 @@
     - per `ssh` git@github.com:janklecka0815/bootcamp-mindstorms-18.git
     - per `https` https://github.com/janklecka0815/bootcamp-mindstorms-18.git
 
-#### Testprogramm
+#### Testprogramm EV3Hello.java starten
 - In Eclipse: `Window` -> `Preferences` -> `leJOS EV3` auf den Ordner lib/lejos_ev3 setzen
 - Projekt öffnen: `File` -> `Open Projects from File System...` und das ausgecheckte Verzeichnis öffnen
+- Auf `bootcamp-mindstorms-18` rechtsklicken und unter Properties `Java Compiler` auf `Enable project specific settings` klicken und Java 1.7 auswählen
+- Roboter per USB an einen Laptop anschließen
 
-Es liegt eine zip-Datei mit dem Namen *samples.zip* im Ordner lib darin findest du weitere Beispiele. 
+*Auf dem Bildschirm sollte eine Ausgabe erscheinen*
 
 ## Bewegen des Roboters
-- Vor und zurück
-- Drehen
-
-## Roboter folgt einer Linie
-- Kurven folgen
-- Sound am Ziel abspielen
+Simple bewegungen wie Vor, zurück oder Drehen
 
 ## Challenge
-Welcher Roboter ist der schnellste auf einem vorgegebenen Kurs?
+Welcher Roboter ist der schnellste auf dem vorgegebenen Kurs?
 
 ## Doku:
 https://roberta-home.de/sites/default/files/media/Roberta-EV3programmierenJava_small.pdf
+
 http://www.lejos.org/ev3/docs/
