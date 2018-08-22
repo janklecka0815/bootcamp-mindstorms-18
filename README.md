@@ -19,7 +19,7 @@
 - In Eclipse: `Window` -> `Preferences` -> `leJOS EV3` auf den Ordner lib/lejos_ev3 setzen
 - Projekt öffnen: `File` -> `Open Projects from File System...` und das ausgecheckte Verzeichnis öffnen
 - Auf `bootcamp-mindstorms-18` rechtsklicken und unter Properties `Java Compiler` auf `Enable project specific settings` klicken und Java 1.7 auswählen
-- Roboter per USB an einen Laptop anschließen
+- Roboter per USB an einen Laptop anschließen und über *Run as (LeJOS)* auf EV3Hello den Build übertragen
 
 *Auf dem Bildschirm sollte eine Ausgabe erscheinen*
 
