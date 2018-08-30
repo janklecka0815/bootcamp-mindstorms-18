@@ -1,32 +1,41 @@
 # Workshop Mindstorms
 
 ## Einrichten der Umgebung
+- JDK
 - Eclipse
 - Github
 - Beispiel bauen und Upload auf den Roboter
 
 #### Eclipse einrichten
-- Programm herunterladen: https://www.eclipse.org/downloads/
-- Eclipse für Java Entwickler installieren
-- Im Marketplace `help` -> `Eclipse Marketplace...` nach *leJOS EV3* suchen und installieren
+- JDK [herunterladen](http://www.oracle.com/technetwork/java/javase/downloads/) und installieren
+- Eclipse [herunterladen](https://www.eclipse.org/downloads/) und die Version für _Java Entwickler_ installieren
+- Im Eclipse Marketplace _Help -> Eclipse Marketplace..._ nach *leJOS EV3* suchen und installieren
 
 #### Projekt einrichten
-- Bei github anmelden und Repo auschecken:
-    - per `ssh` git@github.com:janklecka0815/bootcamp-mindstorms-18.git
-    - per `https` https://github.com/janklecka0815/bootcamp-mindstorms-18.git
+Repository auschecken:
+```bash 
+# ssh
+git clone git@github.com:janklecka0815/bootcamp-mindstorms-18.git
+    
+# oder https
+git clone https://github.com/janklecka0815/bootcamp-mindstorms-18.git
+```
+#### Testprogramm starten
+Um zu sehen ob alles geklappt hat kompilieren wir als erstes die Datei _EV3Hello.java_ im Verzeichnis _src/org/lejos/learn/helloworld_ und starten sie auf dem Roboter. Vorher müssen allerdings noch ein paar Einstellungen in Eclipse angepasst werden:
+- _Window -> Preferences -> leJOS EV3_ auf den Ordner lib/lejos_ev3 setzen
+- Ausgeschecktes Projekt öffnen: _File -> Open Projects from File System..._
+- In der Projekt Ansicht auf _bootcamp-mindstorms-18_ rechtsklicken, unter Properties _Java Compiler_ auf _Enable project specific settings_ klicken und Java 1.7 auswählen
+- Roboter per USB anschließen und über _Run as (LeJOS)_ auf die Datei EV3Hello den Build übertragen
 
-#### Testprogramm EV3Hello.java starten
-- In Eclipse: `Window` -> `Preferences` -> `leJOS EV3` auf den Ordner lib/lejos_ev3 setzen
-- Projekt öffnen: `File` -> `Open Projects from File System...` und das ausgecheckte Verzeichnis öffnen
-- Auf `bootcamp-mindstorms-18` rechtsklicken und unter Properties `Java Compiler` auf `Enable project specific settings` klicken und Java 1.7 auswählen
-- Roboter per USB an einen Laptop anschließen und über *Run as (LeJOS)* auf EV3Hello den Build übertragen
+*Auf dem Bildschirm des Roboters sollte jetzt eine Ausgabe erscheinen*
 
-*Auf dem Bildschirm sollte eine Ausgabe erscheinen*
+## Aufgaben
 
-## Bewegen des Roboters
-Simple bewegungen wie Vor, zurück oder Drehen
+### Bewegen des Roboters
+- Lies mit dem Farbsensor die Farbe des Untergrunds aus, ein beispiel zum ansteuern des Sensors ist in der Datei _src/org/lejos/learn/helloworld/ColorExample.java_ zu finden
+- Lasse den Roboter vor und zurück fahren, ein Beispiel zum ansteuern des Motors findest du in der Datei _src/org/lejos/learn/helloworld/MotorExample.java_
 
-## Challenge
+### Challenge
 Welcher Roboter ist der schnellste auf dem vorgegebenen Kurs?
 
 ## Doku:
